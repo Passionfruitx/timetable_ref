@@ -1,0 +1,138 @@
+Header (
+	company("EMA Design Automation") 
+	product("TimingDesigner") 
+	rev("9.2") 
+	file("d:\\ref\\rc.td") 
+	date("07/30/2023") time("18:49") 
+	format("9.0") 
+	baseScale(1000.000000) 
+	zoomFactor("0.000597529") 
+	zoomBegin(9093.43) 
+	zoomEnd(514394) 
+	nameFrameWidth(291) 
+	simHDL(Verilog) 
+	simDelayMechanism(Transport) 
+	nextID(23) 
+	TimingAnalysisMethod(51) 
+	SDCVersion(0) 
+	
+	generalPrintParams( "printer,,,portrait,clipboard,Letter,default,6,5,in,color,scaleable,mifframe,preview,")
+	diagramPrintParams( "0,2147483647,0,-1,true,true,1,1,true,true,true,true,all,diagramEnd")
+	spreadsheetPrintParams( "0,2147483647,true,false,1,true,all")
+	)
+tclPreferences (UseAboveSixtyFiveNm UseAlteraFastTimingModel 
+	UseActelMaxTimingModel UseTimingPath UseArrivalTime )
+HDLHeader( 
+	hdlFile("") 
+	checkConstraints(true) 
+	comment("") 
+	checkTimeout(never) 
+	
+	command( name("rw_reg") cmdType(null) ))
+DefaultLabel(
+	delay(showNameString,"") 
+	constraint(showNameString,"") 
+	guarantee(showNameString,"") 
+	measure(showMeasure,"") 
+	store(showNameString,"") 
+	wait(showNameString,"") 
+	end(showNameString,"") 
+	boundary(showIncrement,"") 
+	loop(showNameString,"") 
+	waveform(showSkip,"","") 
+	specifiedclock(showSkip,"","") 
+	derivedclock(showSkip,"","") 
+	simwaveform(showSkip,"","") 
+	bus(showValue,"","H") 
+	)
+DiagramStyle (
+	waveformFont(winFont("Arial",90) qtFont("Arial",9) ) 
+	rulerFont(winFont("Arial",90) qtFont("Arial",9) ) 
+	relationshipFont(winFont("Arial",90) qtFont("Arial",9) ) 
+	labelFont(winFont("Arial",90) qtFont("Arial",9) ) 
+	annotationFont(winFont("Arial",80) qtFont("Arial",8) ) 
+	slotHeight("11") 
+	edgeHeight("11") 
+	edgeGrade("1.96261") 
+	inputPenStyle(0) 
+	outputPenStyle(0) 
+	inoutPenStyle(0) 
+	internalPenStyle(0) 
+	vRelationshipPenStyle(0) 
+	hRelationshipPenStyle(0) 
+	inputPenColor(3) 
+	outputPenColor(3) 
+	inoutPenColor(3) 
+	internalPenColor(3) 
+	wavePenWidth("0") 
+	relationshipPenWidth("0") 
+	wavesOnTop 
+	relationshipsOnTop 
+	annotationsOnTop 
+	showSlopedEdges 
+	edgeDisplayType(Uncertainty) 
+	)
+Bus ( objectID(8) name("CPU_ADDR") minheight("0") edges(
+	(invalid,0.000,0.000,L), 
+	(valid,40000.000,40000.000,label(showText,"WADDR","") ), 
+	(invalid,190000.000,190000.000), 
+	(valid,320000.000,320000.000,label(showText,"RDATA","") ), 
+	(invalid,460000.000,460000.000), 
+	(blank,500000.000,500000.000)) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Clock ( objectID(2) name("clk_50m") minheight("0") periodScale(1000.000) period(20.000000) dutyCycle(50.000000) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Waveform ( objectID(3) name("rst_core_n") minheight("0") edges(
+	(invalid,0.000,0.000,L), 
+	(low,20000.000,20000.000), 
+	(high,60000.000,60000.000), 
+	(blank,500000.000,500000.000,T)) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Waveform ( objectID(4) name("cpu_r_en") minheight("0") edges(
+	(invalid,0.000,0.000,L), 
+	(low,20000.000,20000.000), 
+	(high,220000.000,220000.000), 
+	(low,240000.000,240000.000), 
+	(high,340000.000,340000.000), 
+	(low,360000.000,360000.000), 
+	(blank,500000.000,500000.000,T)) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Waveform ( objectID(14) name("inside_w_en") minheight("0") edges(
+	(invalid,0.000,0.000,L), 
+	(low,20000.000,20000.000), 
+	(high,100000.000,100000.000), 
+	(low,120000.000,120000.000), 
+	(high,160000.000,160000.000), 
+	(low,180000.000,180000.000), 
+	(high,220000.000,220000.000), 
+	(low,240000.000,240000.000), 
+	(high,260000.000,260000.000), 
+	(low,280000.000,280000.000), 
+	(blank,500000.000,500000.000,T)) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Bus ( objectID(5) name("reg_field") minheight("0") edges(
+	(invalid,0.000,0.000,L), 
+	(valid,20000.000,20000.000,label(showText,"RST","") ), 
+	(valid,120000.000,120000.000,label(showText,"32'd1","") ), 
+	(valid,180000.000,180000.000,label(showText,"32'd2","") ), 
+	(valid,240000.000,240000.000,label(showText,"32'd1","") ), 
+	(valid,280000.000,280000.000,label(showText,"32'd2","") ), 
+	(valid,360000.000,360000.000,label(showText,"RST","") ), 
+	(blank,500000.000,500000.000,T)) 
+	hdl( direction(internal) ) label(showDefault,"","H") )
+Grid ( "clk_50m" topWave("clk_50m") 
+	 color(6) 1stWidth(0) 2ndWidth(0) 1stStyle(0) 2ndStyle(0) 
+  show1st )
+
+CauseAndEffect(objectID(15) source("inside_w_en",2) target("reg_field",2) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+
+CauseAndEffect(objectID(17) source("inside_w_en",4) target("reg_field",3) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+
+CauseAndEffect(objectID(18) source("cpu_r_en",2) target("reg_field",4) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+
+CauseAndEffect(objectID(19) source("inside_w_en",6) target("reg_field",4) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+
+CauseAndEffect(objectID(21) source("cpu_r_en",4) target("reg_field",6) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+
+CauseAndEffect(objectID(22) source("inside_w_en",8) target("reg_field",5) label(showDefault,"") fromLatestEnd toEarliestBegin color(3) width("0")  )
+EndCycleEvent ( objectID(1) name("end") time(500.000000) showVert hideOnPrinter label(showDefault,"") fromLatestEnd toEarliestBegin  )
